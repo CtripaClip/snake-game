@@ -21,7 +21,6 @@ y_food = random.randint(1, cols_y) * food_d # ranfom food position
 
 snake_lenght = 1
 score = 0
-
 dx = 0 # direction
 dy = -1 # direction
 
@@ -30,6 +29,7 @@ screen = pygame.display.set_mode((screen_x, screen_y))
 pygame.display.set_caption("Snake Game")
 
 clock = pygame.time.Clock()
+start = time.time()#                     time of the game
 
 def game_over():
     font = pygame.font.SysFont("Comic Sans MS", 50) # set font, font size
